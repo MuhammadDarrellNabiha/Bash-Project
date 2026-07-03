@@ -1,5 +1,4 @@
 # Bash Scripting & Linux Command Reference
-## Persiapan Lomba Bash Scripting (4 Hari)
 
 ---
 
@@ -11,9 +10,6 @@ A1. Navigasi & Manajemen File · A2. Text Processing · A3. Permission & Ownersh
 **Bagian B — Bash Scripting Fundamentals**
 B1. Struktur Dasar · B2. Variabel & Special Variables · B3. Quoting & Escaping · B4. Operator · B5. Conditional · B6. Looping · B7. Function · B8. Array · B9. String Manipulation · B10. I/O Redirection & Pipe · B11. Command & Process Substitution · B12. Input Handling · B13. Error Handling & Debugging · B14. Topik Advanced Lainnya
 
-**Bagian C — Tips & Strategi Lomba**
-
----
 
 # BAGIAN A — COMMAND LINE UTILITIES
 
@@ -806,34 +802,3 @@ echo "${parts[1]}"   # 2
 ```
 
 ---
-
-# BAGIAN C — TIPS & STRATEGI LOMBA
-
-### 🔥 Common Pitfalls (Sering Bikin Gagal)
-- Lupa quote variable → `[ $var = "x" ]` error kalau `$var` kosong. Fix: `[ "$var" = "x" ]`
-- Spasi di assignment: `var = 5` SALAH, harus `var=5` (tanpa spasi)
-- Pakai `=` padahal maksudnya perbandingan numerik (harusnya `-eq`)
-- Lupa shebang atau lupa `chmod +x`
-- Loop atas output `ls` (`for f in $(ls)`) — lebih aman glob langsung: `for f in *`
-- Backtick nested yang ribet — ganti ke `$()`, bisa di-nest dengan rapi
-
-### 📋 Checklist Sebelum Submit
-1. `bash -n script.sh` (cek syntax error)
-2. Test dengan input kosong / edge case
-3. Cek exit code di akhir (`echo $?`)
-4. Pastikan permission execute (`chmod +x`)
-5. Kalau ada `shellcheck`, jalankan dulu
-
-### 🗓️ Saran Rencana Belajar 4 Hari
-| Hari | Fokus |
-|---|---|
-| 1 | Command dasar (A1-A4): navigasi, file ops, permission, find |
-| 2 | Text processing (A2 + regex): grep, sed, awk — PALING SERING muncul di lomba |
-| 3 | Bash scripting inti (B1-B9): variabel, conditional, loop, function, array, string |
-| 4 | Advanced + latihan (B10-B14): redirection, error handling, lalu kerjain soal latihan dari nol |
-
-> Latihan paling efektif: bikin mini-task sendiri ("hitung kata terbanyak di log", "validasi format email dari list", "rename semua file sesuai pola") lalu kerjain dari nol tanpa contekan.
-
----
-
-Semangat buat lombanya! 🚀
