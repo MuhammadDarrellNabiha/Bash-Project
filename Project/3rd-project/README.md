@@ -1,6 +1,6 @@
 # Directory Scanner
 
-My first Bash Scripting project.
+My Third Bash Scripting project.
 
 The purpose of this project is to practice:
 
