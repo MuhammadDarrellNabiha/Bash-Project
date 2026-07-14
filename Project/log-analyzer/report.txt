@@ -1,0 +1,21 @@
+==================REPORT==================
+===================ERROR===================
+2026-07-13 08:03:11 ERROR Failed to connect to database
+2026-07-13 08:07:22 ERROR Authentication failed for user "admin"
+2026-07-13 08:09:17 ERROR File "/var/log/app.log" not found
+2026-07-13 08:13:10 ERROR Permission denied while accessing /etc/shadow
+2026-07-13 08:17:36 ERROR Timeout while contacting API server
+==================TOP ERROR===============
+ Failed to connect to database
+ Authentication failed for user "admin"
+ File "/var/log/app.log" not found
+ Permission denied while accessing /etc/shadow
+ Timeout while contacting API server
+==================SUMMARY=================
+========= Log Analyzer ==========
+file        : sample_system.log
+Totals Logs : 19
+Info        : 11
+Warning     : 4
+Error       : 5
+=================================

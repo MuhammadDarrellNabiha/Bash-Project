@@ -31,9 +31,37 @@ summary_log (){
         echo "Error       : $error"
         echo "================================="
 }
-show_errors () {
+show_errors (){
     cat "$file" | grep -i error
 }
+
+search_keyword (){
+    read -p "Give The Keyword Log : " keyword
+    cat "$file" | grep -i "$keyword"
+}
+
+top_error () {
+   grep -i "ERROR" "$file" |
+    while IFS= read -r line; do
+        echo "${line#*ERROR}"
+    done
+}
+
+
+generate_report () {
+    touch report.txt
+    {
+        echo "==================REPORT=================="
+        echo "===================ERROR==================="
+        show_errors
+        echo "==================TOP ERROR==============="
+        top_error
+        echo "==================SUMMARY================="
+        summary_log
+    } > report.txt
+    echo "Report has been created"
+}
+   
 
 
 if [[ "$file" = "" ]]; then
@@ -47,6 +75,12 @@ elif [[ -f "$file" ]]; then
             1) summary_log
                 ;;
             2) show_errors
+                ;;
+            3) search_keyword
+                ;;
+            4) top_error
+                ;;
+            5) generate_report
                 ;;
             6) running="false"
                 ;;
