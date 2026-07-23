@@ -1,0 +1,20 @@
+2026-07-13 08:00:15 INFO User "darrell" logged in from 192.168.1.10
+2026-07-13 08:01:02 INFO Backup started
+2026-07-13 08:02:44 WARNING Disk usage reached 82%
+2026-07-13 08:03:11 ERROR Failed to connect to database
+2026-07-13 08:04:56 INFO Retrying database connection
+2026-07-13 08:05:18 INFO Database connection established
+2026-07-13 08:06:01 WARNING High memory usage detected
+2026-07-13 08:07:22 ERROR Authentication failed for user "admin"
+2026-07-13 08:08:45 INFO Scheduled cleanup completed
+2026-07-13 08:09:17 ERROR File "/var/log/app.log" not found
+2026-07-13 08:10:51 INFO User "alice" logged out
+2026-07-13 08:11:23 WARNING Network latency exceeded threshold
+2026-07-13 08:12:39 INFO Service restarted successfully
+2026-07-13 08:13:10 ERROR Permission denied while accessing /etc/shadow
+2026-07-13 08:14:55 INFO Backup completed successfully
+2026-07-13 08:15:41 WARNING CPU usage reached 91%
+2026-07-13 08:16:08 INFO User "bob" logged in from 10.0.0.23
+2026-07-13 08:17:36 ERROR Timeout while contacting API server
+2026-07-13 08:18:59 INFO API server reachable again
+2026-07-13 08:20:14 INFO System health check passed

@@ -1,0 +1,13 @@
+passwdaudit tools 1.0 guide
+	
+	FORMAT: passwdaudit <options> <filepath>
+	OPTION:
+		"-h" opening guide book
+		"-a" summary off all 
+		"-iu" showing interactive user
+		"-nu" showing non-interactive user
+		"-s" showing shell activation
+		"-t" showing total user
+		"-x" showing unknown shell
+		"-j" formatingg all info to json
+			  
