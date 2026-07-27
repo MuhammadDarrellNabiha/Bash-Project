@@ -9,5 +9,4 @@ passwdaudit tools 1.0 guide
 		"-s" showing shell activation
 		"-t" showing total user
 		"-x" showing unknown shell
-		"-j" formatingg all info to json
 			  
